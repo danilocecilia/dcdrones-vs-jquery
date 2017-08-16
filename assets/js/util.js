@@ -584,6 +584,15 @@
 
 	};
 
-	
+	//Pick random image on main screen ( banner )
+	var image = new Array();
+		image[0] = "./images/banners/banner-0.jpg";
+		image[1] = "./images/banners/banner-1.jpg";
+		image[2] = "./images/banners/banner-2.jpg";
+		image[3] = "./images/banners/banner-3.jpg";
+		var size = image.length
+		var x = Math.floor(size * Math.random())
+
+		$('#banner').css('background-image', 'url(' + image[x] + ')');
 
 })(jQuery);

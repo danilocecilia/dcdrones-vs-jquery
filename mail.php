@@ -36,7 +36,7 @@ $mail->AltBody = $message;
 
 if(!$mail->send()) {
     echo 'Sua mensagem não pôde ser enviada.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+    echo ' - Mailer Error: ' . $mail->ErrorInfo;
 } else {
     echo 'Mensagem enviada com sucesso.';
 }
