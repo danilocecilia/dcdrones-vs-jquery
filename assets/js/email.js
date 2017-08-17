@@ -9,8 +9,8 @@ var ajax = {
 				var userEmail = $("input[name=email] ").val();
 				var userComments = $("textarea ").val();
 
-				if (userName == " " || userEmail == " " || userComments == " ")
-					alert("Form not complete ");
+				if (userName == "" || userEmail == "" || userComments == "")
+					alert("Por favor preencher todos os campos.");
 				else {
 					ajax.SetText("Enviando... ");
 					$.post("mail.php ", {
