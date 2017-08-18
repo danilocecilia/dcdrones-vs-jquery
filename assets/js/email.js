@@ -27,7 +27,7 @@ var ajax = {
 					});
 				}
 			}
-			else alert("Você foi enviar somente 1 email por vez. ");
+			else alert("Você pode enviar somente 1 email por vez. ");
 		},
 		SetText: function (text) {
 			$("input[type=button] ").val(text);
